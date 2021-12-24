@@ -24,12 +24,12 @@ public class UserController {
         List<User> listUsers = serv.listAll();
         model.addAttribute("userList", listUsers);
 
-        if(keyword != null) {
-            model.addAttribute("findusers", serv.findbyKeyWord(keyword));
-        }
-        else{
-            model.addAttribute("findusers", serv.listAll());
-        }
+//        if(keyword != null) {
+//            model.addAttribute("findusers", serv.findbyKeyWord(keyword));
+//        }
+//        else{
+//            model.addAttribute("findusers", serv.listAll());
+//        }
 
         return "admin";
     }

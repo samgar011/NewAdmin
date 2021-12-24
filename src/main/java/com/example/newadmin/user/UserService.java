@@ -9,7 +9,8 @@ import java.util.Optional;
 @Service
 public class UserService {
 
-    @Autowired private UserRepo wp;
+    @Autowired
+    private UserRepo wp;
 
     public List<User>listAll(){
         return (List<User>) wp.findAll();
@@ -38,8 +39,9 @@ public class UserService {
         wp.deleteById(id);
 
     }
-    public List <User> findbyKeyWord(String keyword){
-        return (List<User>) wp.findbyKeyWord(keyword);
-    }
+//    public List <User> findbyKeyWord(String keyword){
+//
+//        return (List<User>) wp.findbyKeyWord(keyword);
+//    }
 }
 

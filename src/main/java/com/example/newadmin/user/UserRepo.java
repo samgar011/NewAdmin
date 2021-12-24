@@ -6,8 +6,8 @@ import org.springframework.data.repository.query.Param;
 public interface UserRepo extends CrudRepository<User, Integer> {
     public Long countById(Integer id);
 
-    @Query(value = "select * from adminusers e where e.first_name like %:keyword% ", nativeQuery = true)
-    <List> User findbyKeyWord(@Param("keyword") String keyword);
+//    @Query(value = "select * from adminusers a where a.first_name like %:keyword% ", nativeQuery = true)
+//    <List> User findbyKeyWord(@Param("keyword") String keyword);
 
 
 }
